@@ -1,5 +1,5 @@
 ---
-title: "Kate's CV"
+title: "Kate Young, PhD"
 output: html_document
 date: "`r Sys.Date()`"
 ---
@@ -8,23 +8,21 @@ date: "`r Sys.Date()`"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Kate Young, PhD
+# Education
 
-## Education
+# Professional Experience
 
-## Professional Experience
+# Publications
 
-## Publications
+# Conference Presentations
 
-## Conference Presentations
+# Invited Teaching
 
-## Invited Teaching
+# Society Memberships
 
-## Society Memberships
+# Certifications
 
-## Certifications
-
-## Awards
+# Awards
 
 ## Research Support
 
