@@ -33,6 +33,17 @@ edu %>%
                           why = details)
 ```
 
+## Professional Positions
+
+```{r professional}
+prof <- tibble::tribble(
+  ~ title, ~ years, ~ employer, 
+  "Statistician II", "2020-2023", 'University of Kanasas Medical Center, Kansas City, KS'
+)
+prof %>%
+  brief_entries(what = title, when = years, with = employer)
+```
+
 ## Publications
 
 ```{r peerreviewed}
