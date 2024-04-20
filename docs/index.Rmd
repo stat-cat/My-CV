@@ -1,8 +1,13 @@
 ---
-title: "Kate Young CV"
+title: "Kate Young's CV"
+name: Kate
+surname: Young
+position: "Research Assistant Professor"
+address: "Department of Biostatistics & Data Science, University of Kansas Medical Center"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
-  vitae::markdowncv
+  vitae::markdowncv:
+    theme: davewhipp
 ---
 
 ```{r setup, include=FALSE}
@@ -11,26 +16,24 @@ library(vitae)
 library(dplyr)
 ```
 
-# Education
 
-# Professional Experience
 
-# Publications
+## Education
 
-```{r}
+```{r education}
+edu<- tibble::tribble(
+  ~ degree, ~ year, ~ school, ~ location, ~ details,
+  "PhD in Biostatistics", 2023, 'University of Kanasas Medical Center', 'Kansas City, KS',
+  c('Advisor: Leonidas Bantis, PhD')
+)
+edu %>%
+  detailed_entries(what = degree, when = year, where = school, with = location, 
+                          why = details)
+```
+
+## Publications
+
+```{r peerreviewed}
 bib <- file.path("MyCV.bib")
 bibliography_entries(bib) 
 ```
-
-# Conference Presentations
-
-# Invited Teaching
-
-# Society Memberships
-
-# Certifications
-
-# Awards
-
-## Research Support
-
