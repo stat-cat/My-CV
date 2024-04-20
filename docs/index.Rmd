@@ -1,11 +1,14 @@
 ---
-title: "Kate Young, PhD"
-output: html_document
-bibliography: MyCV.bib
+title: "Kate Young CV"
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::markdowncv
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(vitae)
+library(dplyr)
 ```
 
 # Education
@@ -13,6 +16,11 @@ knitr::opts_chunk$set(echo = FALSE)
 # Professional Experience
 
 # Publications
+
+```{r}
+bib <- file.path("MyCV.bib")
+bibliography_entries(bib) 
+```
 
 # Conference Presentations
 
