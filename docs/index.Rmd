@@ -18,8 +18,6 @@ library(vitae)
 library(dplyr)
 ```
 
-
-
 ## Education
 
 ```{r education}
@@ -38,7 +36,8 @@ edu %>%
 ```{r professional}
 prof <- tibble::tribble(
   ~ title, ~ years, ~ employer, 
-  "Statistician II", "2020-2023", 'University of Kanasas Medical Center, Kansas City, KS'
+  "Statistician II", "2020-2023", 'University of Kanasas Medical Center, Kansas City, KS',
+  "Associate Biostatistician", "2018-2020", "PRA Health Sciences, Kansas City, KS"
 )
 prof %>%
   brief_entries(what = title, when = years, with = employer)
