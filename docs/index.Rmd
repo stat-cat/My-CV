@@ -1,7 +1,7 @@
 ---
 title: "Kate Young, PhD"
 output: html_document
-date: "`r Sys.Date()`"
+bibliography: MyCV.bib
 ---
 
 ```{r setup, include=FALSE}
