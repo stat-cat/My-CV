@@ -5,7 +5,6 @@ surname: Young
 position: "Research Assistant Professor"
 address: "Department of Biostatistics & Data Science, University of Kansas Medical Center"
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolour: blue
 docname: CV
 output: 
   vitae::markdowncv:
