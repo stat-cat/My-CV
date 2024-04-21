@@ -37,7 +37,8 @@ prof <- tibble::tribble(
   ~ title, ~ years, ~ employer, 
   "Statistician II", "2020-2023", 'University of Kanasas Medical Center, Kansas City, KS',
   "Associate Biostatistician", "2018-2020", "PRA Health Sciences, Kansas City, KS",
-  "Business Intelligence Analyst", "2012-2017", "Cerner Corporation, Kansas City, MO"
+  "Business Intelligence Analyst", "2012-2017", "Cerner Corporation, Kansas City, MO",
+  "Sr. Data Analyst", "2017-2018", "Cerner Corportation, Kansas City, MO"
 )
 prof %>%
   brief_entries(what = title, when = years, with = employer)
